@@ -30,6 +30,10 @@
     --hover: rgb(77, 179, 204);
     --hover2: #ff6633;
     --h1:rgb(173 12 12);
+    --logo-color-1:#006fa9;
+    --logo-color-2:#3E3E40;
+    --logo-color-3:#a2a2a8;
+
 }
     
 
@@ -356,7 +360,7 @@ h3{
 .spi-heading{
     font-size: 100px;
     letter-spacing: -4px;
-    color: #ebeced;
+    color: var(--logo-color-3);
     font-weight: 800;
     margin: 0;
     margin-top: 50px;
@@ -485,7 +489,7 @@ margin-bottom: 0;
 
 .members{
     background-color: #015b7d;
-    background-image: url(../image/ters2.jpg);
+    background-image: url(../image/ters3.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
