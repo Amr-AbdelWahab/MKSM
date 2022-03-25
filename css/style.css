@@ -30,6 +30,7 @@
     --hover: rgb(77, 179, 204);
     --hover2: #ff6633;
     --h1:rgb(173 12 12);
+    --h11:rgb(255, 23, 23);
     --logo-color-1:#006fa9;
     --logo-color-2:#3E3E40;
     --logo-color-3:#a2a2a8;
@@ -377,9 +378,7 @@ h3{
 @media (max-width: 767px){
     .spi-heading{font-size: 80px;}
     .spi-heading + p{margin-top: -20px;}
-
 }
-
 
 .ex-p  {
     max-width: 50%;
@@ -388,6 +387,11 @@ h3{
     background-color:  #ebeced9c;
     padding: 20px;
     border-radius: 20px;
+}
+@media (max-width:1200px) {
+    .ex-p  {
+        max-width: 100%;
+    }
 }
 .ex-p p {
 margin-bottom: 0;
@@ -404,22 +408,31 @@ margin-bottom: 0;
 }
 .expCard{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    /* padding-left: 20px; */
     width: 500px;
+    /* min-height: 150px; */
     margin: 20px;
-    /* border-style: groove; */
     border-color: #9e9e9e9c;
     border-radius: 5px;
     background-color:  #ebeced9c;
 
 }
-.expCard h4{
+.expCard h3{
+    padding-left: 20px;
+    /* margin-top: 10px; */
+}
+.expCard div{
+    padding-top: 6px;
+    padding-bottom: 0;
+    height: 150px;
+}
+
+.expCard p ul{
 
 }
-.expCard p ul{
-    padding-left: 20px;
+.expCard ul{
+    margin: 0;
 
 }
 .expCard li{
@@ -431,10 +444,9 @@ margin-bottom: 0;
 }
 .expCard img{
     display: inline-block;
-    width: 40%;
-    height: 100%;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     border-radius: 0 3px 3px 0;
+    border: 1px solid #fff;
 }
 .serv {
     display: inline;
@@ -450,7 +462,7 @@ margin-bottom: 0;
     font-weight: 500;
 }
 .serv img{
-    height: 20px;
+    height: 30px;
 }
 .app-cont{
     display: flex;
@@ -466,6 +478,17 @@ margin-bottom: 0;
     border-radius: 10px;
     transition: 0.7s ease;
 }
+@media (max-width:991px){
+    .app-cont{
+        flex-direction: column;
+    }
+    .app{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .app:hover{
     transform: scale(1.05);}
 .app h4{
@@ -498,11 +521,18 @@ margin-bottom: 0;
 }
 .members .container{
 }
-.members .container .spi-heading + p{
+
+.members .spi-heading{
+}
+
+.members .spi-heading + p{
+    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 2.5rem;
     margin-left: 15px;
-    margin-top: -45px;
+    margin-top: -50px;
 }
+
 .members .container h1 + p{
     letter-spacing: 3.5px;
     /* color: #000; */
@@ -515,15 +545,18 @@ margin-bottom: 0;
     align-items: center;
     margin: 50px;
     padding-right: 20px;
-    background-color: rgba(238, 238, 238, 0.452);
+    /* background-color: rgba(238, 238, 238, 0.979); */
+    background-color: #ebeced;
+
     border: 1px solid var(--main-color);
-    border-right: 4px solid var(--main-color);
+    border-right: 6px solid var(--main-color);
     border-radius: 20px 0 0 20px;
 }
 .man-card img{
     height: 200px;
     margin-right: 50px;
     border-radius: 20px 0 0 20px;
+    border: 1px solid #fff;
 }
 .man-card h3{
     margin-bottom: 20px;
@@ -556,17 +589,17 @@ margin-bottom: 0;
 
 .projects{
     background-color: rgb(255, 255, 255);
-
-
-
 }
 .projects .container{
     min-height: 100vh;
 }
+.projects .spi-heading img{
+    height: 70px;
+}
 .projects .container .spi-heading + p{
     font-size: 2.5rem;
     margin-left: 15px;
-    margin-top: -45px;
+    margin-top: -20px;
 }
 
 .proj-cont{
@@ -577,14 +610,13 @@ margin-bottom: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .text{
     color: var(--main-color);
     font-weight: 600;
-
 }
+
 .proj-card{
     width: 650px;
     display: flex;
