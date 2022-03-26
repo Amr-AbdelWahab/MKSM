@@ -21,7 +21,7 @@
 
 <body>
     <!-- Start Header ------------------------------ -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="#"><img src="image/mksm-logo.png" alt="" class="logoH"></a>
             <nav>
@@ -42,16 +42,30 @@
                     <a class="link" href="#service">Services</a>
                     <a class="link" href="#contact">Contact us</a>
                 </div>
+                <div class="ham "  id="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="dnNav  " id="dnNav">
+                    <a class=" " href="#">Home</a>
+                    <a class=" " href="#aboutmksm">About MKSM</a>
+                    <a class=" " href="#members">Members</a>
+                    <a class=" " href="#expertise">Exertise</a>
+                    <a class=" " href="#project">Project</a>
+                    <a class=" " href="#service">Services</a>
+                    <a class=" " href="#contact">Contact us</a>
+                </div>
             </nav>
         </div>
     </header>
 
     <!-- End Header  -->
     <!-- Start lANDING ------------------------------ -->
-    <section class="main ">
+    <section class="main " id="ha">
 
         <div class="container dfcc">
-            <img class="mainLogo" src="image/mksm-logo.png" alt="">
+            <img id=" ham" class="mainLogo" src="image/mksm-logo.png" alt="">
             <!-- <img class="mainLogo" src="image/mksm-logo-2colors.png" alt=""> -->
             <div class="qoute dfcc">
                 <blockquote>
@@ -69,8 +83,8 @@
     <!-- Start about ------------------------------Start about ------------------------------ -->
     <section class="abMKSM ">
         <!-- Overview -->
-        <div class="container ">
-            <div class="feat Overview" id="Overview">
+        <div class="container " id="aboutmksm"> 
+            <div class="feat Overview" id="Overview ">
                 <i class="mainIcon fa-solid fa-street-view"></i>
                 <h3 class="feetHead">Company Overview</h3>
                 <div class="parag">
@@ -302,7 +316,7 @@
                     </div>
                 </div>
 
-                <div class="man-card">
+                <div class="man-card opsit-card">
                     <div class="dfcc">
                         <img src="image/sq-syd.png" alt="Eng.Sayed">
                     </div>
@@ -548,7 +562,8 @@
 
 
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
+<script src="js/nav.js" defer></script>
 </body>
 
 </html>

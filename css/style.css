@@ -84,8 +84,22 @@ a{
 }
 
 
+/* mob -----------------------------------------------------*/
+@media (max-width: 767px) {
+    /* section{
+        width:100%;
+    }
+
+    .container{
+        width: 95%;
+    } */
+}
 /* Small -----------------------------------------------------*/
 @media (min-width: 768px) {
+    section{
+        width:100%;
+    }
+
     .container{
         width: 750px;
     }
@@ -154,6 +168,10 @@ header .container{
 }
 .logoH{
     height: 40px;
+}
+@media (max-width: 767px) {
+    .logoH{height: 25px;}
+    .header{height: 35px;}
 }
 .navLinks{
     display: flex;
@@ -240,10 +258,136 @@ i{
     opacity: 1;
 }
 
-
-
-
 /* End Header */
+/* Start Ham-Nav   --------------------------Ham-Nav---------------------------*/
+.ham{
+    display: none;
+}
+.dnNav{
+    display: none;
+}
+@media (max-width:991px){
+    .header{
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        transition: 0.7s ease;
+        transition-delay: 0.5s;
+    }
+    .btmBd{
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+    .navLinks{
+        display: none;
+    }
+    .ham{
+        display: block;
+        /* position: absolute;
+        right: 20px;
+        top: 20px; */
+        width: 30px;
+        height: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .ham span{
+        display: inline-block;
+        background-color: var(--logo-color-3);
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+
+        transition: 0.3s ease;
+    }
+    .ham :nth-child(2){
+        width:60%;
+    }
+    .ham :nth-child(3){
+        width:20%;
+    }
+
+
+
+
+    .ham-activ :nth-child(1),.ham-activ :nth-child(3){
+        width:0;
+    }
+    .ham-activ :nth-child(2){
+        width:100%;
+        transform: rotate(45deg);
+        position: relative;
+        background-color: #ebeced;
+
+    }
+    .ham-activ :nth-child(2)::before{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #ebeced;
+        position: absolute;
+        border-radius: 2px;
+        transform: rotate(-90deg);
+    }
+
+.dnone{
+    /* display: none;
+    top: -500px; */
+
+
+}
+
+    .dnNav{
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background-color: #1e2f65;
+        /* border-top: 3px solid rgb(255, 255, 255); */
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #ebeced;
+        width: 100%;
+        z-index: -1;
+
+        transition: 0.7s ease;
+    }
+
+    .dNavShow{
+        top: 50px;
+    }
+
+    .dnNav a{
+        color: #ebeced;
+        padding: 5px;
+        border-top: 1px solid #000;
+        transition: 0.3s ease;
+
+
+    }
+    .dnNav a:hover{
+        letter-spacing:3px;
+        padding: 5px;
+        font-weight: 800;
+        /* color: var(--hover2); */
+        background-color: var(--hover);
+    }
+
+    
+
+
+
+
+}
+
+
+
+
+
+
+/* End Ham-Nav   --------------------------Ham-Nav---------------------------*/
 
 
 
@@ -264,10 +408,15 @@ i{
     align-items: center;
     /* z-index: -1; */
 }
+
 .mainLogo{
     width: 30%;
     padding-bottom: 10px;
 }
+@media (max-width: 767px) {
+    .main {border:none;}
+}
+
 
 
 
@@ -576,13 +725,14 @@ margin-bottom: 0;
     align-items: center;
     margin: 50px;
     padding-right: 20px;
-    /* background-color: rgba(238, 238, 238, 0.979); */
     background-color: #ebeced;
 
     border: 1px solid var(--main-color);
     border-right: 6px solid var(--main-color);
     border-radius: 20px 0 0 20px;
 }
+
+
 .man-card img{
     height: 200px;
     margin-right: 50px;
@@ -602,6 +752,24 @@ margin-bottom: 0;
 }
 .man-card p{
     margin-top: 10px;
+
+}
+.opsit-card{
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding-right: 0;
+    padding-left: 20px;
+    border-right: 0px solid var(--main-color);
+    border-left: 6px solid var(--main-color);
+    border-radius: 0 20px 20px 0;
+
+
+
+}
+.opsit-card img{
+    margin-right: 0;
+    margin-left: 50px;
+    border-radius: 0 20px 20px 0;
 
 }
 
