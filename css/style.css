@@ -692,12 +692,12 @@ margin-bottom: 0;
 
 .members{
     background-color: #015b7d;
-    background-image: url(../image/ters3.jpg);
+    background-image: url(../image/ters3-GS50.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     /* opacity: .21; */
-    filter: grayscale(50%);
+    /* filter: grayscale(50%); */
 }
 .members .container{
 }
