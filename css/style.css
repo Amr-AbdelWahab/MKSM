@@ -421,6 +421,7 @@ i{
 /* Start LANDING MAIN   -----------------------------------------------------*/
 .main{
     border:10px solid var(--main-color);
+    border:10px solid rgba(255, 255, 255, 0.95);
     border-top:none;
     border-radius: 0 0 2em 2em ;
     width: 100%;
@@ -814,10 +815,15 @@ margin-bottom: 0;
 /* Start Projects   ---------------Start Projects--------------------------------------*/
 
 .projects{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(243, 243, 243); */
+    margin-bottom: -50px;
+    padding-bottom: 50px;
 }
 .projects .container{
     min-height: 100vh;
+}
+.cont-back-color{
+    background-color: rgb(243, 243, 243);
 }
 .projects .spi-heading img{
     height: 70px;
